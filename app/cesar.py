@@ -19,4 +19,6 @@ def encripta(message, n=13):
 
 
 def decripta(message, n=13):
+    """decripta a menssagem."""
+    decriptado = ''
     return encripta(message)

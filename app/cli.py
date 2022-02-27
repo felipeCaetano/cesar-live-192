@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 
-from app.cesar import decripta, encripta
+from cesar import decripta, encripta
 
 
 parser = ArgumentParser(description='Cifra de Cesar')
