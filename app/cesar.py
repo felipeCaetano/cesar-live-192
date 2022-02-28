@@ -1,24 +1,24 @@
 from string import ascii_lowercase
 
 
-def encripta(message, n=13):
-    """encripta a message."""
+def encripta(message, rot=13):
+    """Encripta a message."""
 
     encriptado = ''
-    for l in message:
-        l = l.lower()
-        if l == ' ':
-            encriptado += l
-        elif l not in ascii_lowercase:
+    for letra in message:
+        letra = letra.lower()
+        if letra == ' ':
+            encriptado += letra
+        elif letra not in ascii_lowercase:
             ...
         else:
-            pos = ascii_lowercase.find(l) + n
-            l = ascii_lowercase[pos % 26]
-            encriptado += l
+            pos = ascii_lowercase.find(letra) + rot
+            letra = ascii_lowercase[pos % 26]
+            encriptado += letra
     return encriptado
 
 
-def decripta(message, n=13):
-    """decripta a menssagem."""
-    decriptado = ''
-    return encripta(message)
+def decripta(message, rot=13):
+    """Decripta a menssagem."""
+
+    return encripta(message, rot)
